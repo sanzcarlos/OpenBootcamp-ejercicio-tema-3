@@ -1,15 +1,23 @@
-package com.open_bootcamp;
-
-import java.util.ArrayList;
-
 public class main {
+
     public static void main (String[] args){
-        int param1 = 1;
-        int param2 = 3;
-        int param3 = 5;
-        System.out.println(sumo (param1, param2, param3));
+        Coche miCoche = new Coche();
+        miCoche.AddDoor();
+        
+        System.out.println(miCoche.NDoor);
     }
-    public static int sumo (int a, int b, int c){
-        return a + b + c;
+
+    public static int suma (int a, int b){
+        return a + b;
+    }
+
+}
+
+class Coche {
+
+    public int NDoor = 0;
+    
+    public void AddDoor(){
+        this.NDoor++;
     }
 }
